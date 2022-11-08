@@ -1,6 +1,6 @@
 import { View, Text } from 'dripsy'
 import { TextLink } from 'solito/link'
-import { useFormattedDate } from 'app/hooks/useFormattedDate'
+import { useFormattedDate } from 'app/hooks'
 
 export function TestScreen() {
   return (
