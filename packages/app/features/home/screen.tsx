@@ -80,6 +80,15 @@ export function HomeScreen() {
         >
           Test Page Link
         </TextLink>
+        <View sx={{ width: 32 }} />
+        <TextLink
+          href="/settings"
+          textProps={{
+            style: sx({ fontSize: 16, fontWeight: 'bold', color: 'blue' }),
+          }}
+        >
+          Settings
+        </TextLink>
       </Row>
     </View>
   )

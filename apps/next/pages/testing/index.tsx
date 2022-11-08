@@ -1,3 +1,3 @@
-import { TestScreen } from 'app/features/testing'
+import { TestScreen } from 'app/features/testing/screen'
 
 export default TestScreen
