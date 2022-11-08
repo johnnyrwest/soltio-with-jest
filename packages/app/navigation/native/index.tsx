@@ -2,7 +2,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import { HomeScreen } from '../../features/home/screen'
 import { UserDetailScreen } from '../../features/user/detail-screen'
-import { TestScreen } from '../../features/testing'
+import { TestScreen } from '../../features/testing/screen'
+import { SettingsScreen } from '../../features/settings/screen'
 
 const Stack = createNativeStackNavigator<{
   home: undefined
@@ -10,6 +11,7 @@ const Stack = createNativeStackNavigator<{
     id: string
   }
   testing: undefined
+  settings: undefined
 }>()
 
 export function NativeNavigation() {
@@ -34,6 +36,13 @@ export function NativeNavigation() {
         component={TestScreen}
         options={{
           title: 'Test',
+        }}
+      />
+      <Stack.Screen
+        name="settings"
+        component={SettingsScreen}
+        options={{
+          title: 'Settings',
         }}
       />
     </Stack.Navigator>
